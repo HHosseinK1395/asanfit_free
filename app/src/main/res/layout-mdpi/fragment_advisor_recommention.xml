@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_with_shadow"
+            android:layout_marginTop="@dimen/navigation_margin_20"
+            android:layout_marginLeft="@dimen/navigation_margin_20"
+            android:layout_marginRight="@dimen/navigation_margin_20"
+            android:layout_marginBottom="@dimen/navigation_margin_30"
+            android:padding="@dimen/navigation_margin_20"
+            android:orientation="vertical">
+
+            <FontComponents.TextViewFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="توصیه های مشاور"
+                app:customFont="@string/font_default"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_first_page_text_size_5"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/divider_underline_color" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/orange_divider">
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:src="@drawable/logo_advisor_recommention"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_breakfast_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="صبحانه"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="@dimen/navigation_margin_2"
+                app:customFont="@string/font_default"
+                android:textColor="@color/mycolor_yellow"
+                android:textSize="@dimen/fragment_first_page_text_size_5"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_advisor_recommention_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="@dimen/navigation_margin_2"
+                app:customFont="@string/font_default"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_first_page_text_size_4"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_lunch_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ناهار"
+                android:layout_marginTop="@dimen/navigation_margin_20"
+                android:layout_marginBottom="@dimen/navigation_margin_2"
+                app:customFont="@string/font_default"
+                android:textColor="@color/mycolor_yellow"
+                android:textSize="@dimen/fragment_first_page_text_size_5"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_advisor_recommention_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:layout_marginBottom="@dimen/navigation_margin_2"
+                app:customFont="@string/font_default"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_first_page_text_size_4"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_dinner_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="شام"
+                android:layout_marginTop="@dimen/navigation_margin_20"
+                android:layout_marginBottom="@dimen/navigation_margin_2"
+                app:customFont="@string/font_default"
+                android:textColor="@color/mycolor_yellow"
+                android:textSize="@dimen/fragment_first_page_text_size_5"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_advisor_recommention_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="@dimen/navigation_margin_25"
+                app:customFont="@string/font_default"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_first_page_text_size_4"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

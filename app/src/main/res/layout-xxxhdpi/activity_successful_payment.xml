@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_kadr"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:background="@drawable/background_payment">
+
+                    <ImageView
+                        android:id="@+id/img_which_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:layout_marginRight="@dimen/navigation_margin_10"
+                        android:src="@drawable/plan_purple" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="اشتراک"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_first_page_text_size_1"
+                            android:textStyle="bold" />
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_which_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_first_page_text_size_8"
+                            android:textStyle="bold" />
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ماهه"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_first_page_text_size_1"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/navigation_margin_40"
+                    android:gravity="center">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="«"
+                        android:textColor="@color/green_dark"
+                        android:textSize="@dimen/fragment_first_page_text_size_6" />
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/successful_payment_header"
+                        android:textColor="@color/green_dark"
+                        android:textSize="@dimen/fragment_first_page_text_size_6"
+                        android:textStyle="bold" />
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="»"
+                        android:textColor="@color/green_dark"
+                        android:textSize="@dimen/fragment_first_page_text_size_6" />
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:gravity="top|center"
+                    android:text="@string/successful_payment_body"
+                    android:textSize="@dimen/fragment_first_page_text_size_2" />
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_complete_pezeshki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="@string/successful_payment_button"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/fragment_first_page_text_size_1"
+                android:paddingLeft="@dimen/fragment_first_page_padding_5"
+                android:paddingRight="@dimen/fragment_first_page_padding_5"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

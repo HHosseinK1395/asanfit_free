@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Asanfit</string>
+    <string name="navigation_header_username_string">مهرناز حدادی</string>
+    <string name="navigation_header_mobile_string">موبایل : 09216469341</string>
+    <string name="navigation_header_credit_string">اعتبار : 5000 تومان</string>
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+    <string name="font_default">fonts/IranSansFaNum.ttf</string>
+
+    <string name="first_page_build_yourself">خودتو بساز</string>
+    <string name="first_page_message_text">شما یک پیغام از مدیریت دارید</string>
+    <string name="first_page_message_text_2">یک هفته تا اتمام دوره جدید</string>
+
+
+    <string name="intro_one_head_string">مشاور شخصی تغذیه و تناسب اندام شما</string>
+    <string name="intro_one_body_string">با یکی از مشاورین مجرب و تایید شده حوزه تغذیه و رژیم درمانی،  به طور اختصاصی در ارتباط باشید و با کمک وی به تناسب اندام برسید.</string>
+
+    <string name="intro_two_head_string">برنامه رژیم غذایی اختصاصی</string>
+    <string name="intro_two_body_string">مشاور شما، رژیم غذایی را با در نظر گرفتن شرایط و نیازهای خاص بدن شما، سلیقه و عادات غذایی و سبک زندگی تان تنظیم می کند.</string>
+
+    <string name="intro_three_head_string">پشتیبانی همیشگی</string>
+    <string name="intro_three_body_string">در طول اجرای برنامه رژیمی، سوالات و مشکلات خود را با مشاورتان در میان بگذارید و راهنمایی های لازم رو دریافت کنید.</string>
+
+    <string name="register_head_string">ورود / ثبت نام</string>
+    <string name="register_body_string">لطفا شماره موبایل خود را وارد کرده و در مرحله بعد، کد پیامک شده به موبایلتان را وارد نمایید.</string>
+    <string name="register_button_text">ارسال</string>
+    <string name="register_error_one">شماره موبایل وارد نشده است</string>
+    <string name="register_error_two">شماره موبایل نا معتبر است</string>
+    <string name="register_rule_text_1">قوانین و مقررات</string>
+    <string name="register_rule_text_2">مربوط به شرایط استفاده خدمات</string>
+    <string name="register_rule_text_3">آسان فیت را به طور کامل مطالعه کرده و پذیرفتم.</string>
+    <string name="register_rule_url">http://www.google.com</string>
+    <string name="register_shared_preferences_name">MY_PREFERENCES</string>
+    <string name="register_shared_preferences_key">MY_PREFERENCES_KEY</string>
+
+
+    <string name="register_code_head_string">ورود / ثبت نام</string>
+    <string name="register_code_body_string">ارسال مجدد کد</string>
+    <string name="register_code_button_text">ادامه</string>
+    <string name="register_code_error_one">کد وارد نشده است</string>
+    <string name="register_code_error_two">موارد مربوط به ارسال مجدد کد در این بخش باید انجام شود</string>
+
+    <string name="user_info_head_string">اطلاعات پایه</string>
+    <string name="user_info_body_string">با وارد کردن اطلاعات زیر، وزن  ایده آل و میزان اضافه وزن خود را محاسبه کرده و برای رسیدن به اهداف سلامتی و تناسب اندام خود برنامه ریزی کنید.</string>
+    <string name="user_info_female">خانم</string>
+    <string name="user_info_male">آقا</string>
+    <string name="user_info_button_text">محاسبه</string>
+    <string name="user_info_error">لطفا اطلاعات خود را به طور کامل وارد کنید</string>
+    <string name="user_info_back_pressed">دکمه ی بازگشت را دوباره لمس کنید</string>
+
+
+    <string name="user_info_complete_header">شاخص توده بدنی شما</string>
+    <string name="user_info_complete_header_2">می باشد.</string>
+    <string name="user_info_complete_start">شروع کن</string>
+    <string name="user_info_complete_weight_one">شما دارای</string>
+    <string name="user_info_complete_weight_two">وزن مناسب</string>
+    <string name="user_info_complete_weight_three">هستید.</string>
+    <string name="user_info_complete_under_up_one">وزن ایده آل شما</string>
+    <string name="user_info_complete_under_up_two">کیلوگرم می باشد و تا</string>
+    <string name="user_info_complete_under_down_one">رسیدن به تناسب اندام فقط</string>
+    <string name="user_info_complete_under_down_two">کیلوگرم فاصله دارید.</string>
+
+
+    <string name="profile_header">پروفایل من</string>
+    <string name="profile_user_name">نام و نام خانوادگی</string>
+    <string name="profile_phone">شماره موبایل</string>
+    <string name="profile_email">ایمیل</string>
+    <string name="profile_location">شهر محل سکونت</string>
+    <string name="profile_edit_button">ویرایش اطلاعات</string>
+    <string name="profile_header_2">تنظیمات برنامه</string>
+    <string name="profile_settings_1">دریافت پیام های یادآوری و اطلاع رسانی</string>
+    <string name="profile_settings_2">دریافت نکات رفتاری و پیام های انگیزشی</string>
+    <string name="profile_exit">خروج از حساب کاربری</string>
+
+
+
+    <string name="about_header">آنچه در آسان فیت به دست می آورید</string>
+    <string name="about_body_1">مشاور شخصی تغذیه و تناسب اندام</string>
+    <string name="about_body_2_1">رژیم غذایی کاملا اختصاصی مطابق با نیازها، سلایق و شرایط خاص شما.</string>
+    <string name="about_body_2_2">)</string>
+    <string name="about_body_2_3">هر 2 الی 3 هفته یکبار، رژیم غذایی جدید توسط مشاور ارائه می شود</string>
+    <string name="about_body_2_4">(</string>
+    <string name="about_body_3">ارتباط مستمر مشاور و پاسخگویی به سوالات و مشکلات شما</string>
+    <string name="about_body_4">نکات رفتاری کاهش وزن و اصلاح عادت نادرست تغذیه ای</string>
+    <string name="about_body_5">حفظ و افزایش انگیزه و روحیه شما تا رسیدن به هدف تناسب اندام</string>
+    <string name="about_body_6">صرفه جویی در وقت و هزینه های رفت و آمد مراجعه حضوری</string>
+    <string name="about_body_7">بعد از انتخاب پلن و خرید اشتراک، "سوالات جامع و دقیقی در خصوص عادات و سلایق غذایی، بیماری ها و داروهای مصرفی، شرایط فیزیولوژیکی، میزان فعالیت بدنی و سایر سوالات لازم از شما پرسیده خواهد شد" تا متناسب با آن، برنامه رژیم غذایی توسط مشاورتان تنظیم گردد</string>
+
+
+    <string name="successful_payment_header">با موفقیت پرداخت شد</string>
+    <string name="successful_payment_body">به خانواده آسان فیت خوش آمدید. لطفا پرونده پزشکی خود را با دقت و صبر و حوصله فراوان تکمیل کنید تا برنامه رژیم غذایی اختصاصی مطابق با نیازها، سلایق و شرایط خاص شما تنظیم گردد.</string>
+    <string name="successful_payment_button">تکمیل پرونده پزشکی</string>
+
+
+    <string name="fragment_extended_subscription_1">پرونده ی پزشکی</string>
+    <string name="fragment_extended_subscription_2">مدت زمان باقیمانده</string>
+    <string name="fragment_extended_subscription_3">تا پایان اشتراک شما</string>
+    <string name="fragment_extended_subscription_4">روز می باشد.</string>
+    <string name="fragment_extended_subscription_5">مبلغ تخفیف</string>
+    <string name="fragment_extended_subscription_6">تومان</string>
+    <string name="fragment_extended_subscription_7">مبلغ پرداختی</string>
+    <string name="fragment_extended_subscription_8">تومان</string>
+    <string name="fragment_extended_subscription_button">خرید اشتراک</string>
+
+
+    <string name="intro_button_text">ثبت نام</string>
+
+    <string name="fragment_profile_moshaver_header">پروفایل مشاور</string>
+    <string name="fragment_profile_moshaver_name">مسعود حمیدپوران</string>
+    <string name="fragment_profile_moshaver_function">مشاور تغذیه و تناسب اندام</string>
+    <string name="fragment_profile_moshaver_description_1">در این بخش به صورت یک توضیح کامل از اطلاعات شخصی مشاور اعمال باید بشود توضیح داخل گرافیک نرم افزار هم یک توضیح نا مشخص از چیز دیگری بود</string>
+    <string name="fragment_profile_moshaver_description_2">در این بخش به صورت یک توضیح کامل از اطلاعات شخصی مشاور اعمال باید بشود توضیح داخل گرافیک نرم افزار هم یک توضیح نا مشخص از چیز دیگری بود</string>
+
+    <string name="fragment_user_comments_button">انتخاب کارشناس</string>
+
+    <string name="fragment_diet_1">برنامه غذایی</string>
+    <string name="fragment_diet_2">طرز تهیه غذاها</string>
+    <string name="fragment_diet_3">توصیه های مشاور</string>
+    <string name="fragment_diet_4">3 عدد نان سنگک</string>
+    <string name="fragment_diet_5">1 قوطی کبریت پنیر کم نمک</string>
+    <string name="fragment_diet_6">2 عدد بیسکویت سبوس دار ساقه طلایی</string>
+    <string name="fragment_diet_7">1 لیوان چای</string>
+    <string name="fragment_diet_8">نیم لیتر شیر کم چرب</string>
+
+
+</resources>
+

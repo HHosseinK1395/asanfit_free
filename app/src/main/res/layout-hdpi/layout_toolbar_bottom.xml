@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_bottom_menu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:weightSum="3"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/lnr_bottom_menu_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/lnr_bottom_menu_home_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bottom_bar_home_gray"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/lnr_bottom_menu_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fragment_first_page_text_size_1"
+                android:text="خانه"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                app:customFont="@string/font_default"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_bottom_menu_program"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right|left"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/lnr_bottom_menu_program_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bottom_bar_diet_grey"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/lnr_bottom_menu_program_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fragment_first_page_text_size_1"
+                android:text="برنامه غذایی"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                app:customFont="@string/font_default"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_bottom_menu_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/lnr_bottom_menu_chat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bottom_bar_chat_grey"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/lnr_bottom_menu_chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fragment_first_page_text_size_1"
+                android:text="گفتگو با مشاور"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:customFont="@string/font_default"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

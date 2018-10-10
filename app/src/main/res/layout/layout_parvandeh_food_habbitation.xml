@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/navigation_margin_20">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عادات و سلایق غذایی"
+            android:textColor="@color/mycolor_yellow"
+            android:textStyle="bold"
+            app:customFont="@string/font_default"
+            android:textSize="11sp"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/round_indicator"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_10"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="میزان مصرف صبحانه شما چقدر است"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_breakfast"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="میزان مصرف ناهار شما چقدر است"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_lunch"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="میزان مصرف شام شما چقدر است"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_dinner"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="میزان مصرف میان وعده شما چقدر است"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="آیا عادت به ریزه خواری دارید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_habit"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="غذاهای مورد علاقه شما کدامند"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <FontComponents.MyEditText
+                android:id="@+id/spinner_parvandeh_food_habbitation_beloved"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right|center"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:paddingRight="@dimen/navigation_margin_20"
+                android:paddingLeft="@dimen/navigation_margin_20"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:maxLines="1"
+                android:maxLength="35"
+                android:inputType="text"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="کدام غذاها را دوست ندارید یا به آن حساسیت دارید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <FontComponents.MyEditText
+                android:id="@+id/spinner_parvandeh_food_habbitation_sensitivity"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right|center"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:paddingRight="@dimen/navigation_margin_20"
+                android:paddingLeft="@dimen/navigation_margin_20"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:maxLines="1"
+                android:maxLength="35"
+                android:inputType="text"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا در روز چند عدد میوه مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_fruit_in_day"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا چقدر سبزیجات مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_vegetables"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا در روز چقدر برنج مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_rice"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا چقدر شیر و انواع لبنیات مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_milk"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا چقدر انواع گوشت و مرغ و ماهی مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_meat"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_0"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="معمولا چقدر فست فود یا غذاهای رستورانی مصرف می کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_food_habbitation_fast_food"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_profile_moshaver"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/navigation_margin_15"
+                    android:layout_marginLeft="@dimen/navigation_margin_15"
+                    android:layout_marginRight="@dimen/navigation_margin_15">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/navigation_margin_10">
+
+                       <FrameLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+
+                           <de.hdodenhof.circleimageview.CircleImageView
+                               android:layout_width="105dp"
+                               android:layout_height="105dp"
+                               android:layout_gravity="center"
+                               android:src="@drawable/profile_moshaver_circle"
+                               app:civ_border_width="0.1dp"
+                               app:civ_border_color="@color/white"/>
+
+                           <de.hdodenhof.circleimageview.CircleImageView
+                               android:id="@+id/moshaver_profile_image"
+                               android:layout_width="96dp"
+                               android:layout_height="96dp"
+                               android:layout_gravity="center"
+                               android:src="@drawable/profile_moshaver_test"
+                               app:civ_border_width="0.1dp"
+                               app:civ_border_color="@color/white"/>
+
+                       </FrameLayout>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_profile_moshaver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/fragment_first_page_text_size_2"
+                            android:layout_marginTop="@dimen/navigation_margin_5"
+                            app:customFont="@string/font_default"
+                            android:textColor="@color/white"
+                            android:text="@string/fragment_profile_moshaver_name"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_profile_moshaver_function"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/fragment_first_page_text_size_1"
+                            app:customFont="@string/font_default"
+                            android:textColor="@color/white"
+                            android:text="@string/fragment_profile_moshaver_function"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_profile_moshaver_header"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    app:customFont="@string/font_default"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginRight="@dimen/navigation_margin_30"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/divider_underline_color"
+                        android:layout_marginLeft="@dimen/navigation_margin_30"/>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/orange_divider"
+                        android:layout_marginRight="@dimen/navigation_margin_25">
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_25"
+                    android:layout_marginRight="@dimen/navigation_margin_25">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات شخصی"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_1"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_moshaver_personal_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_profile_moshaver_description_1"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_30"
+                    android:layout_marginRight="@dimen/navigation_margin_25">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="رزومه تخصصی"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_1"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_moshaver_resume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_profile_moshaver_description_1"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    android:layout_marginBottom="@dimen/navigation_margin_60"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_select_advisor_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_2"
+                android:text="انتخاب مشاور"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:layout_gravity="center|bottom" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

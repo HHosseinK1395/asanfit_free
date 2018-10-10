@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_with_shadow"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/access_in_asanfit_logo"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/navigation_margin_20"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_header"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/navigation_margin_40"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    app:customFont="@string/font_default"
+                    android:textColor="#fe8300"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_1"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_2_1"
+                        android:layout_gravity="center"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_2_4"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/intro_text_view_size_02"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_2_3"
+                        android:layout_gravity="center|right"
+                        android:gravity="right"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/intro_text_view_size_02"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_2_2"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:textSize="@dimen/intro_text_view_size_02"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_gravity="right"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_3"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_4"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_5"
+                        android:layout_gravity="center"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/about_body_6"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:tint="#fe8300"
+                            android:src="@drawable/ic_about_circle"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            app:customFont="@string/font_default"
+                            android:layout_gravity="center"
+                            android:textColor="#fe8300"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/about_body_7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:customFont="@string/font_default"
+                    android:textSize="@dimen/intro_text_view_size_02"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:lineSpacingExtra="7dp"
+                    android:layout_marginLeft="@dimen/navigation_margin_40"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginRight="@dimen/navigation_margin_40"/>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_access_in_asanfit_plans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="پلن های پیشنهادی"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom|center" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

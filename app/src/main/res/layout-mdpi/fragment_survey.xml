@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_with_shadow"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:padding="@dimen/navigation_margin_15"
+                    android:layout_marginBottom="@dimen/navigation_margin_30">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="right"
+                        android:layout_gravity="right">
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نظر سنجی"
+                            app:customFont="@string/font_default"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/fragment_first_page_text_size_3"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:layout_marginRight="27dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/divider_underline_color"/>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/orange_divider">
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/navigation_margin_15"
+                            android:lineSpacingExtra="@dimen/navigation_margin_5"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:customFont="@string/font_default"
+                            android:textColor="#444444"
+                            android:text="به عملکرد مشاور تغذیه و تناسب اندام خود از 1 تا 5 چه امتیازی میدهید؟"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginRight="-10dp">
+
+                                <ImageView
+                                    android:id="@+id/img_survey_rate_1"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:src="@drawable/start_gray"
+                                    android:layout_gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:customFont="@string/font_default"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:layout_marginTop="-7dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"
+                                    android:text="1"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginRight="-10dp">
+
+                                <ImageView
+                                    android:id="@+id/img_survey_rate_2"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:src="@drawable/start_gray"
+                                    android:layout_gravity="center" />
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-7dp"
+                                    android:gravity="center"
+                                    android:text="2"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginRight="-10dp">
+
+                                <ImageView
+                                    android:id="@+id/img_survey_rate_3"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:src="@drawable/start_gray"
+                                    android:layout_gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:layout_marginTop="-7dp"
+                                    android:gravity="center"
+                                    android:text="3"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_marginRight="-10dp">
+
+                                <ImageView
+                                    android:id="@+id/img_survey_rate_4"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:src="@drawable/start_gray"
+                                    android:layout_gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-7dp"
+                                    android:gravity="center"
+                                    android:text="4"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_survey_rate_5"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:src="@drawable/start_gray"
+                                    android:layout_gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:layout_marginTop="-7dp"
+                                    android:gravity="center"
+                                    android:text="5"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/shape_survey_edit_text">
+
+                            <FontComponents.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:maxLength="64"
+                                android:paddingRight="25dp"
+                                android:paddingLeft="25dp"
+                                android:layout_gravity="top"
+                                android:gravity="top"
+                                android:paddingTop="20dp"
+                                android:textColorHint="@color/first_page_color_gray"
+                                android:textSize="@dimen/intro_text_view_size_2"
+                                android:hint="اگر توضیحی راجعبه عملکرد مشاور خود دارید، اینجا بنویسید"
+                                android:backgroundTint="@color/edittext_disable_color"
+                                android:background="@drawable/shape_survey_edit_text"/>
+
+                        </LinearLayout>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#444444"
+                            android:layout_marginBottom="@dimen/navigation_margin_10"
+                            android:layout_marginTop="@dimen/navigation_margin_50"
+                            android:textSize="@dimen/intro_text_view_size_1"
+                            android:text="ادامه با همین مشاور یا مشاور جدید"/>
+
+                        <FontComponents.MyButton
+                            android:id="@+id/btn_survey_this_advisor"
+                            android:layout_width="165dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/survey_blue_button"
+                            android:text="همین مشاور"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/navigation_margin_10"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_first_page_text_size_3"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_survey_new_advisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/button_background_2"
+                android:text="مشاور جدید"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_3"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

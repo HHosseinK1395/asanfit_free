@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="activity_register_code_text_length">6</integer>
+    <integer name="activity_user_info_text_length">3</integer>
+    <integer name="activity_user_info_text_age">2</integer>
+
+</resources>

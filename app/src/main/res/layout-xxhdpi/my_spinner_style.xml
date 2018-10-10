@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/navigation_margin_15"
+        android:textSize="@dimen/intro_text_view_size_02"
+        android:paddingBottom="@dimen/navigation_margin_10"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>

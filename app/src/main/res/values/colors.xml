@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mycolor_yellow">#fe8300</color>
+    <color name="mycolor_yellow_text">#fe8300</color>
+    <color name="navigation_background">#F2F2F2</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="divider_underline_color">#dfd5ff</color>
+    <color name="mini_light_gray">#C0C0C0</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="gray_dark">#606060</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#454553</color>
+    <color name="green">#00ff00</color>
+    <color name="green_dark">#2da807</color>
+    <color name="transparent">#00ffffff</color>
+
+
+    <color name="intro_activate_dots">#fbbafa</color>
+    <color name="intro_inactivate_dots">#83878b</color>
+    <color name="intro_background_1">#fdfdfe</color>
+    <color name="intro_background_2">#cdddef</color>
+    <color name="intro_background_3">#ceefcd</color>
+    <color name="intro_done_color">#2f236c</color>
+    <color name="intro_skip_color">#2f236c</color>
+    <color name="intro_next_arw_color">#2f236c</color>
+    <color name="intro_indicator_selected_color">#523dbd</color>
+    <color name="intro_indicator_unselected_color">#9f93dc</color>
+
+
+    <color name="edittext_background_color">#E0E0E0</color>
+
+
+    <color name="weight_color_gray">#FFC6D6E0</color>
+    <color name="weight_color_green">#FFAFDC67</color>
+    <color name="weight_color_yellow">#FFF9D64B</color>
+    <color name="weight_color_red">#FFF75645</color>
+
+    <color name="weight_color_green_up">#3de405</color>
+    <color name="weight_color_yellow_up">#e4e005</color>
+    <color name="weight_color_red_up">#e40505</color>
+
+    <color name="weight_background_color_green">#FF2DA908</color>
+    <color name="transparent_gray">#eeeef0</color>
+
+    <color name="text_color">#686881</color>
+
+    <color name="first_page_circle_color_1">#EA2F76</color>
+    <color name="first_page_circle_color_2">#AC4DEF</color>
+    <color name="first_page_circle_color_3">#1FDBA5</color>
+    <color name="first_page_color_red">#e72424</color>
+    <color name="first_page_color_green">#0aaf22</color>
+    <color name="first_page_color_gray">#a2a2a9</color>
+    <color name="first_page_color_black">#454553</color>
+
+
+    <color name="intro_text_color">#27272d</color>
+    <color name="register_text_color_1">#585858</color>
+    <color name="register_text_color_2">#27272d</color>
+    <color name="register_text_color_3">#bebed0</color>
+
+    <color name="user_info_text_color_1">#585858</color>
+    <color name="user_info_text_color_2">#686881</color>
+    <color name="user_info_text_color_3">#454553</color>
+    <color name="user_info_text_color_4">#bebed0</color>
+    <color name="user_info_text_color_5">#454553</color>
+    <color name="user_info_text_color_6">#686881</color>
+
+
+    <color name="user_info_complete_text_color_1">#454553</color>
+    <color name="user_info_complete_text_color_2">#454553</color>
+    <color name="user_info_complete_fat_green">#2da907</color>
+    <color name="user_info_complete_circle_green_1">#c0e5b4</color>
+    <color name="user_info_complete_circle_green_2">#eaf6e6</color>
+    <color name="user_info_complete_circle_yellow_1">#ffdab2</color>
+    <color name="user_info_complete_circle_yellow_2">#fff2e5</color>
+
+    <color name="moshaver_profile_purple">#953ca3</color>
+
+    <color name="chat_bottom_bar">#f9f9f9</color>
+
+    <color name="edittext_disable_color">#ebeaf0</color>
+
+</resources>
+
+
+
+

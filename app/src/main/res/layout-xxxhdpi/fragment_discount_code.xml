@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_with_shadow"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:padding="@dimen/navigation_margin_15"
+                android:orientation="vertical">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="کد تخفیف هدیه"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fragment_first_page_text_size_3"/>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/orange_divider">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:background="@color/divider_underline_color"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"/>
+
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="انواع کتلت و شامی غذاهایی هستند که در اکثر خانه ها تهیه و سرو می شود. معمولا برای تهیه شامی از لپه و نخود یا آرد نخودچی استفاده می‌شود. این بار به جای درست کمی شوی، شامی …"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/navigation_margin_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/discount_code"
+                    android:gravity="center">
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_discount_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XTMLWR"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:textSize="@dimen/intro_text_view_size_4"
+                        android:textColor="#111111"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_user_info_complete_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="ارسال به دوستان"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:layout_gravity="center|bottom" />
+
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

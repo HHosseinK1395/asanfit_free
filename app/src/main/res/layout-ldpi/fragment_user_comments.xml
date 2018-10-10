@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_profile_moshaver"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_15"
+                android:layout_marginLeft="@dimen/navigation_margin_15"
+                android:layout_marginRight="@dimen/navigation_margin_15">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_10">
+
+                   <FrameLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:layout_width="76dp"
+                           android:layout_height="76dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/profile_moshaver_circle"
+                           app:civ_border_width="0.1dp"
+                           app:civ_border_color="@color/white"/>
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:id="@+id/moshaver_profile_image"
+                           android:layout_width="70dp"
+                           android:layout_height="70dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/profile_moshaver_test"
+                           app:civ_border_width="0.1dp"
+                           app:civ_border_color="@color/white"/>
+
+                   </FrameLayout>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_profile_moshaver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"
+                        android:layout_marginTop="@dimen/navigation_margin_5"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/white"
+                        android:text="@string/fragment_profile_moshaver_name"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_profile_moshaver_function"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/fragment_first_page_text_size_1"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/white"
+                        android:text="@string/fragment_profile_moshaver_function"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout_user_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="@dimen/navigation_margin_25"
+                android:layout_marginRight="@dimen/navigation_margin_25"
+                app:tabIndicatorColor="@color/mycolor_yellow_text"
+                app:tabGravity="fill">
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/user_comments_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <FontComponents.MyButton
+        android:id="@+id/btn_user_info_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_2_to_11_and_14_16_17_22"
+        android:text="@string/fragment_user_comments_button"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-45dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+</LinearLayout>

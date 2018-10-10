@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_with_shadow"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:padding="@dimen/navigation_margin_15"
+                android:orientation="vertical">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="پلن های پیشنهادی"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/divider_underline_color" />
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/orange_divider">
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_extended_subscription_2"
+                    android:layout_gravity="center"
+                    app:customFont="@string/font_default"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_4"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            app:dv_lineWidth="1dp"
+                            android:src="@drawable/ring"
+                            android:layout_marginRight="@dimen/navigation_margin_5"
+                            android:tint="@color/red"
+                            android:layout_marginLeft="@dimen/navigation_margin_5"
+                            app:dv_arc_gravity_vertical="Center"
+                            android:id="@+id/circle_progress_1"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_end_days_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textSize="@dimen/intro_text_view_size_3"
+                            android:layout_gravity="center"
+                            android:textColor="@color/red"
+                            app:customFont="@string/font_default" />
+
+                    </FrameLayout>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_3"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_extended_subscription_6_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/plan_blue"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="اشتراک"
+                                    app:customFont="@string/font_default"
+                                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="6"
+                                    app:customFont="@string/font_default"
+                                    android:textSize="@dimen/fragment_first_page_text_size_5"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ماهه"
+                                    app:customFont="@string/font_default"
+                                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="-13dp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="-20dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_pishnehadi_6_month_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal">
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_pishnehadi_6_month_toman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" تومان"
+                                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                                    android:layout_gravity="center"
+                                    app:customFont="@string/font_default"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_pishnehadi_6_month_ragham"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25000"
+                                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                                    android:layout_gravity="center"
+                                    app:customFont="@string/font_default"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/navigation_margin_10"
+                                android:layout_marginRight="@dimen/navigation_margin_10"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black"/>
+
+                        </FrameLayout>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_pishnehadi_6_month_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="22000 تومان"
+                            android:textSize="@dimen/fragment_first_page_text_size_3"
+                            app:customFont="@string/font_default"
+                            android:gravity="center|top"
+                            android:textStyle="bold"
+                            android:textColor="#fe8300"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_extended_subscription_3_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/plan_purple"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="اشتراک"
+                                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                                    app:customFont="@string/font_default"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="3"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fragment_first_page_text_size_5"
+                                    android:textStyle="bold"
+                                    app:customFont="@string/font_default" />
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ماهه"
+                                    app:customFont="@string/font_default"
+                                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="-13dp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="-20dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/lnr_pishnehadi_3_month_parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal">
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_pishnehadi_3_month_toman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" تومان"
+                                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                                    android:layout_gravity="center"
+                                    app:customFont="@string/font_default"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_pishnehadi_3_month_ragham"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8000"
+                                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                                    android:layout_gravity="center"
+                                    app:customFont="@string/font_default"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/navigation_margin_10"
+                                android:layout_marginRight="@dimen/navigation_margin_10"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/black"/>
+
+                        </FrameLayout>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_pishnehadi_3_month_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8000 تومان"
+                            android:textSize="@dimen/fragment_first_page_text_size_3"
+                            app:customFont="@string/font_default"
+                            android:gravity="center|top"
+                            android:textStyle="bold"
+                            android:textColor="#fe8300"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/img_extended_subscription_1_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/plan_orange_without_shadow"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="اشتراک"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                                    android:textStyle="bold"
+
+                                    app:customFont="@string/font_default" />
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fragment_first_page_text_size_5"
+                                    android:textStyle="bold"
+                                    app:customFont="@string/font_default" />
+
+                                <FontComponents.TextViewFont
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="ماهه"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="-13dp"
+                                    app:customFont="@string/font_default" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal">
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_pishnehadi_1_month_toman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" تومان"
+                                android:textSize="@dimen/fragment_first_page_text_size_2"
+                                android:layout_gravity="center"
+                                app:customFont="@string/font_default"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_pishnehadi_1_month_ragham"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5000"
+                                android:textSize="@dimen/fragment_first_page_text_size_2"
+                                android:layout_gravity="center"
+                                app:customFont="@string/font_default"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/fragment_first_page_text_size_1"
+                            app:customFont="@string/font_default"
+                            android:gravity="center|top"
+                            android:textColor="@color/red"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right|center"
+                    android:weightSum="3"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_send_code"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/blue_btn"
+                        android:layout_gravity="center"/>
+
+                    <FontComponents.MyEditText
+                        android:id="@+id/edt_register_code"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layoutDirection="rtl"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/mini_light_gray"
+                        android:gravity="center"
+                        android:maxLength="8"
+                        android:hint="کد تخفیف"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"
+                        android:background="@drawable/shape_edittext"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کد تخفیف را وارد کنید"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:textSize="@dimen/intro_text_view_size_03"
+                        android:layout_weight="1"
+                        app:customFont="@string/font_default"
+                        android:gravity="right|center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/gray"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/navigation_margin_50">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_6"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        android:textColor="@color/black"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_discount_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1200"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_5"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/intro_text_view_size_02"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/navigation_margin_50"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_8"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_01"
+                        android:textColor="@color/black"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4800"
+                        android:textSize="@dimen/intro_text_view_size_1"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textColor="#fe8300"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_extended_subscription_7"
+                        android:textSize="@dimen/intro_text_view_size_01"
+                        app:customFont="@string/font_default"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="@string/fragment_extended_subscription_button"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/fragment_first_page_text_size_0" />
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

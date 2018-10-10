@@ -1,0 +1,301 @@
+{
+	"@orientation": "vertical",
+	"@layout_width": "match_parent",
+	"@layout_height": "match_parent",
+	"@background": "@color/transparent_gray",
+	"ScrollView": {
+		"@layout_width": "match_parent",
+		"@layout_height": "0dp",
+		"@layout_weight": "1",
+		"@fadingEdge": "none",
+		"@fillViewport": "true",
+		"LinearLayout": {
+			"@layout_width": "match_parent",
+			"@layout_height": "0dp",
+			"@background": "@drawable/shape_with_shadow",
+			"@layout_margin": "@dimen/navigation_margin_10",
+			"@orientation": "vertical",
+			"FontComponents.TextViewFont": [
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_header",
+					"@layout_marginRight": "@dimen/navigation_margin_15",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@textColor": "@color/black",
+					"@textSize": "@dimen/fragment_first_page_text_size_3"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_user_name",
+					"@layout_marginRight": "@dimen/navigation_margin_40",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_2",
+					"@textColor": "@color/gray_dark",
+					"@textSize": "@dimen/fragment_first_page_text_size_2"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_phone",
+					"@layout_marginRight": "@dimen/navigation_margin_40",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_2",
+					"@textColor": "@color/gray_dark",
+					"@textSize": "@dimen/fragment_first_page_text_size_2"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_email",
+					"@layout_marginRight": "@dimen/navigation_margin_40",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_2",
+					"@textColor": "@color/gray_dark",
+					"@textSize": "@dimen/fragment_first_page_text_size_2"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_location",
+					"@layout_marginRight": "@dimen/navigation_margin_40",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_2",
+					"@textColor": "@color/gray_dark",
+					"@textSize": "@dimen/fragment_first_page_text_size_2"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@text": "@string/profile_header_2",
+					"@layout_marginRight": "@dimen/navigation_margin_15",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@textColor": "@color/black",
+					"@textSize": "@dimen/fragment_first_page_text_size_3"
+				}
+			],
+			"LinearLayout": [
+				{
+					"@layout_width": "100dp",
+					"@layout_height": "5dp",
+					"@layout_gravity": "right",
+					"@background": "@color/mycolor_yellow",
+					"@layout_marginRight": "@dimen/navigation_margin_15"
+				},
+				{
+					"@layout_width": "100dp",
+					"@layout_height": "5dp",
+					"@layout_gravity": "right",
+					"@background": "@color/mycolor_yellow",
+					"@layout_marginRight": "@dimen/navigation_margin_15"
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@orientation": "horizontal",
+					"@gravity": "right",
+					"@layout_marginRight": "@dimen/navigation_margin_20",
+					"@layout_marginTop": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_5",
+					"@layout_gravity": "right",
+					"android.support.v7.widget.SwitchCompat": {
+						"@id": "@+id/switch_resolve_notification_message",
+						"@layout_width": "wrap_content",
+						"@layout_height": "wrap_content",
+						"@layout_gravity": "center",
+						"@layout_marginLeft": "@dimen/navigation_margin_15",
+						"@gravity": "center"
+					},
+					"FontComponents.TextViewFont": {
+						"@layout_width": "0dp",
+						"@layout_height": "wrap_content",
+						"@layout_weight": "1",
+						"@layout_gravity": "center",
+						"@gravity": "right",
+						"@text": "@string/profile_settings_1"
+					}
+				},
+				{
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@orientation": "horizontal",
+					"@gravity": "right",
+					"@layout_marginRight": "@dimen/navigation_margin_20",
+					"@layout_marginTop": "@dimen/navigation_margin_5",
+					"@layout_marginBottom": "@dimen/navigation_margin_20",
+					"@layout_gravity": "right",
+					"android.support.v7.widget.SwitchCompat": {
+						"@id": "@+id/switch_resolve_motivational_message",
+						"@layout_width": "wrap_content",
+						"@layout_height": "wrap_content",
+						"@layout_gravity": "center",
+						"@layout_marginLeft": "@dimen/navigation_margin_15",
+						"@gravity": "center"
+					},
+					"FontComponents.TextViewFont": {
+						"@layout_width": "0dp",
+						"@layout_height": "wrap_content",
+						"@layout_weight": "1",
+						"@layout_gravity": "center",
+						"@gravity": "right",
+						"@text": "@string/profile_settings_2"
+					}
+				}
+			],
+			"EditText": [
+				{
+					"@id": "@+id/edt_user_info_weight",
+					"@layout_width": "match_parent",
+					"@layout_height": "@dimen/edit_texts_height",
+					"@layoutDirection": "rtl",
+					"@inputType": "number",
+					"@hint": "نام",
+					"@paddingRight": "20dp",
+					"@maxLength": "@integer/activity_user_info_text_length",
+					"@layout_marginLeft": "@dimen/navigation_margin_20",
+					"@layout_marginRight": "@dimen/navigation_margin_20",
+					"@animateLayoutChanges": "true",
+					"@background": "@drawable/shape_edittext"
+				},
+				{
+					"@id": "@+id/edt_user_info_weight",
+					"@layout_width": "match_parent",
+					"@layout_height": "@dimen/edit_texts_height",
+					"@layoutDirection": "rtl",
+					"@inputType": "number",
+					"@paddingRight": "20dp",
+					"@hint": "موبایل",
+					"@maxLength": "@integer/activity_user_info_text_length",
+					"@layout_marginLeft": "@dimen/navigation_margin_20",
+					"@layout_marginRight": "@dimen/navigation_margin_20",
+					"@animateLayoutChanges": "true",
+					"@background": "@drawable/shape_edittext"
+				},
+				{
+					"@id": "@+id/edt_user_info_weight",
+					"@layout_width": "match_parent",
+					"@layout_height": "@dimen/edit_texts_height",
+					"@layoutDirection": "rtl",
+					"@inputType": "number",
+					"@hint": "ایمیل",
+					"@paddingRight": "@dimen/navigation_margin_20",
+					"@maxLength": "@integer/activity_user_info_text_length",
+					"@layout_marginLeft": "@dimen/navigation_margin_20",
+					"@layout_marginRight": "@dimen/navigation_margin_20",
+					"@animateLayoutChanges": "true",
+					"@background": "@drawable/shape_edittext"
+				}
+			],
+			"FrameLayout": {
+				"@layout_width": "match_parent",
+				"@layout_height": "wrap_content",
+				"@layout_marginRight": "@dimen/navigation_margin_20",
+				"@layout_marginLeft": "@dimen/navigation_margin_20",
+				"@layoutDirection": "rtl",
+				"android.support.v7.widget.AppCompatSpinner": {
+					"@id": "@+id/spinner",
+					"@layout_width": "fill_parent",
+					"@layout_height": "42dp",
+					"@layout_gravity": "right",
+					"@gravity": "right",
+					"@background": "@drawable/shape_edittext"
+				},
+				"ImageView": {
+					"@layout_width": "wrap_content",
+					"@layout_height": "wrap_content",
+					"@src": "@drawable/ic_arrow_down",
+					"@layout_gravity": "center_vertical",
+					"@layoutDirection": "rtl",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@tint": "@color/gray_dark"
+				}
+			},
+			"Button": [
+				{
+					"@id": "@+id/btn_user_info_calculate",
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@layout_gravity": "bottom|center",
+					"@background": "@drawable/shape_button_2",
+					"@text": "@string/profile_edit_button",
+					"@textStyle": "bold",
+					"@textColor": "@color/white",
+					"@layout_marginTop": "@dimen/navigation_margin_20",
+					"@layout_marginLeft": "@dimen/navigation_margin_50",
+					"@layout_marginRight": "@dimen/navigation_margin_50",
+					"@layout_marginBottom": "@dimen/navigation_margin_20",
+					"@textSize": "@dimen/fragment_first_page_text_size_2",
+					"@paddingLeft": "@dimen/fragment_first_page_padding_6",
+					"@paddingRight": "@dimen/fragment_first_page_padding_6",
+					"@backgroundTint": "@color/mycolor_yellow"
+				},
+				{
+					"@id": "@+id/btn_exit",
+					"@layout_width": "match_parent",
+					"@layout_height": "wrap_content",
+					"@layout_gravity": "bottom|center",
+					"@background": "@drawable/shape_button_4",
+					"@text": "@string/profile_exit",
+					"@textStyle": "bold",
+					"@textColor": "@color/red",
+					"@layout_marginTop": "@dimen/navigation_margin_20",
+					"@layout_marginLeft": "@dimen/navigation_margin_10",
+					"@layout_marginRight": "@dimen/navigation_margin_10",
+					"@layout_marginBottom": "@dimen/navigation_margin_20",
+					"@textSize": "@dimen/fragment_first_page_text_size_2",
+					"@paddingLeft": "@dimen/fragment_first_page_padding_6",
+					"@paddingRight": "@dimen/fragment_first_page_padding_6"
+				}
+			]
+		}
+	},
+	"RelativeLayout": {
+		"@layout_width": "match_parent",
+		"@layout_height": "52dp",
+		"@orientation": "horizontal",
+		"@layout_gravity": "bottom",
+		"@background": "@color/white",
+		"FontComponents.TextViewFont": [
+			{
+				"@layout_width": "wrap_content",
+				"@layout_height": "wrap_content",
+				"@textSize": "@dimen/fragment_first_page_text_size_3",
+				"@text": "خانه",
+				"@layout_alignParentLeft": "true",
+				"@layout_centerVertical": "true",
+				"@textColor": "@color/black",
+				"@customFont": "@string/font_default",
+				"@layout_marginLeft": "@dimen/navigation_margin_20"
+			},
+			{
+				"@layout_width": "wrap_content",
+				"@layout_height": "wrap_content",
+				"@textSize": "@dimen/fragment_first_page_text_size_3",
+				"@text": "برنامه غذایی",
+				"@textColor": "@color/black",
+				"@layout_gravity": "center",
+				"@layout_centerHorizontal": "true",
+				"@layout_centerVertical": "true",
+				"@customFont": "@string/font_default"
+			},
+			{
+				"@layout_width": "wrap_content",
+				"@layout_height": "wrap_content",
+				"@textSize": "@dimen/fragment_first_page_text_size_3",
+				"@text": "گفتگو با مشاور",
+				"@textColor": "@color/black",
+				"@layout_alignParentRight": "true",
+				"@layout_centerVertical": "true",
+				"@customFont": "@string/font_default",
+				"@layout_marginRight": "@dimen/navigation_margin_20"
+			}
+		]
+	}
+}

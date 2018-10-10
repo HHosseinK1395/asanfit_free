@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal|center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/navigation_margin_10"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/img_food_plan_arrow_left_calendar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:src="@drawable/ic_arrow_back_white"
+            android:layout_alignParentLeft="true"/>
+
+        <FontComponents.TextViewFont
+            android:id="@+id/txt_food_plan_week_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="هفته ی اول"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/intro_text_view_size_02"/>
+
+        <ImageView
+            android:id="@+id/img_food_plan_arrow_right_calendar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/navigation_margin_10"
+            android:src="@drawable/ic_arrow_forward_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جمعه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_friday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_friday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پنجشنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_thursday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_thursday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="چهارشنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_wednesday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_wednesday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سه شنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_tuesday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_tuesday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دوشنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_monday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_monday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یکشنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_sunday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_sunday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/navigation_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_food_plan_day_name_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/img_food_plan_arrow_right_calendar"
+                android:text="شنبه"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_01" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_01"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_food_plan_saturday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/28"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/intro_text_view_size_0"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_food_plan_saturday_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_5"
+                android:src="@drawable/dot_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

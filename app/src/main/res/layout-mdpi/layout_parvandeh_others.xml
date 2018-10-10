@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/navigation_margin_20">
+
+        <FontComponents.TextViewFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سایر موارد"
+            app:customFont="@string/font_default"
+            android:textColor="@color/mycolor_yellow"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/round_indicator"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_10"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_2"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="میزان خواب شبانه شما به طور متوسط چقدر است"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_others_nighttime_sleep"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_2"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="آیا قبلا برای رژیم گرفتن اقدام کرده اید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_others_previous_regime"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:id="@+id/txt_parvandeh_other_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_2"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:text="به موفقیت خود در رژیم قبلی تان از 1 تا 5 چه نمره ای می دهید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_parvandeh_others_number"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:tooltipText="روز"
+                android:backgroundTint="@color/edittext_disable_color"
+                android:background="@drawable/shape_edittext"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:tint="@color/gray_dark"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/navigation_margin_20"
+        android:gravity="right">
+
+        <FontComponents.TextViewFont
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fragment_first_page_text_size_2"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/navigation_margin_5"
+            android:text="عواملی که باعث عدم موفقیت شما در رژیم قبلی بود را ذکر کنید"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <FontComponents.MyEditText
+                android:id="@+id/spinner_parvandeh_others_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textAlignment="textEnd"
+                android:textDirection="rtl"
+                android:textColorHint="@color/mini_light_gray"
+                android:padding="@dimen/navigation_margin_5"
+                android:textSize="@dimen/intro_text_view_size_4"
+                android:maxLength="128"
+                android:tooltipText="روز"
+                android:background="@drawable/shape_big_edittext"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

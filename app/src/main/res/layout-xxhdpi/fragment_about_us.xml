@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginBottom="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:background="@drawable/background_with_shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:padding="@dimen/navigation_margin_10"
+                    android:layout_gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="درباره ما"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/divider_underline_color" />
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/orange_divider">
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/navigation_margin_15"
+                        android:lineSpacingExtra="@dimen/navigation_margin_5"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="@dimen/navigation_margin_10"
+                        android:layout_gravity="center"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/first_page_color_black"
+                        android:text="گرافیک هنری است که توانسته بسیاری از هنرها را به خدمت گرفته و اصیل ترین وظیفه خود را که انتقال پیام است به خوبی به انجام رساند. گرافیک مترادف هنر ترسیمی، تصویرسازی، نمودار یا طرح همراه با موضوعات چاپی می باشد. گرافیک در دو مفهوم قدیم (سنتی) و جدید(نوین) متمایز میگردد که در مرز بین این دو پدیده چاپ قرار دارد.."/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginBottom="@dimen/navigation_margin_10"
+                android:background="@drawable/background_with_shadow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="right"
+                    android:padding="@dimen/navigation_margin_10"
+                    android:layout_gravity="right">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="تماس با ما"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/divider_underline_color" />
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/orange_divider">
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/navigation_margin_10"
+                        android:lineSpacingExtra="@dimen/navigation_margin_5"
+                        android:textColor="@color/first_page_color_black"
+                        android:textSize="12sp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        app:customFont="@string/font_default"
+                        android:text="هنرهای گرافیک شامل کشیدن، طراحی کلیشه وگراور برای چاپ و طراحی گرافیکی است. صنایع گرافیک شامل همهٔ تکنیک‌ها و فعالیت‌هایی است که در تولید یک کار چاپی نقشی ایفا می‌کنند. ."/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:weightSum="3"
+                        android:layout_marginTop="@dimen/navigation_margin_30"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/btn_about_us_aparat"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/aboutus_aparat_icon"/>
+
+                        <ImageView
+                            android:id="@+id/btn_about_us_telegram"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/aboutus_telegram_icon"/>
+
+                        <ImageView
+                            android:id="@+id/btn_about_us_instagram"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:src="@drawable/aboutus_instagram_icon"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/navigation_margin_30"
+                        android:layout_marginTop="@dimen/navigation_margin_30"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <FontComponents.MyButton
+                                android:id="@+id/btn_about_telegram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/button_15_blue"
+                                android:text="تماس تلگرامی"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:paddingRight="@dimen/navigation_margin_40"
+                                android:paddingLeft="@dimen/navigation_margin_20"
+                                android:textColor="@color/white"
+                                android:textSize="9sp"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <FontComponents.MyButton
+                                android:id="@+id/btn_about_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/button_15_orange"
+                                android:text="     تماس تلفنی"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:paddingRight="@dimen/navigation_margin_30"
+                                android:paddingLeft="@dimen/navigation_margin_20"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/white"
+                                android:textSize="9sp"/>
+
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_rules_in_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/mycolor_yellow"
+                android:layout_marginTop="@dimen/navigation_margin_20"
+                android:layout_marginBottom="@dimen/navigation_margin_20"
+                android:text="قوانین و مقررات آسان فیت"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

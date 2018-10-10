@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lnr_diet_morning_snack_positive_parent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:background="@drawable/background_with_shadow"
+        android:layout_marginBottom="@dimen/navigation_margin_10">
+
+        <ImageView
+            android:id="@+id/img_diet_morning_snack_positive"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_diet_positive"
+            android:layout_marginLeft="@dimen/navigation_margin_25"/>
+
+        <FontComponents.TextViewFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="میان وعده صبح"
+            app:customFont="@string/font_default"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fragment_first_page_text_size_1"
+            android:layout_gravity="right|center"/>
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            app:srcCompat="@drawable/default_dots"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/navigation_margin_25"
+            android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_morning_snack_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_with_shadow"
+        app:el_duration="100"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnr_diet_morning_snack_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:id="@+id/lnr_expand_layout_morning_snack"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginLeft="@dimen/navigation_margin_35"
+                    android:layout_marginRight="@dimen/navigation_margin_35"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <ImageView
+                        android:id="@+id/img_diet_morning_snack_minus"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center|left"
+                        android:src="@drawable/ic_diet_minus" />
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="میان وعده صبح"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"
+                        android:layout_gravity="right|center"/>
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view_diet_morning_snack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/navigation_margin_30"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="@dimen/navigation_margin_15">
+
+                </android.support.v7.widget.RecyclerView>
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/breakfast_breakfast"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_gravity="bottom"/>-->
+
+        </FrameLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

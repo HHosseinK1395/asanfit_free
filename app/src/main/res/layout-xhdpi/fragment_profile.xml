@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/navigation_margin_20"
+                android:background="@drawable/background_with_shadow"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:orientation="vertical">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_header"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/orange_divider">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/divider_underline_color"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_user_name"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="right|center"
+                    android:hint="نام"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:paddingRight="20dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_phone"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="right|center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingRight="20dp"
+                    android:hint="موبایل"
+                    android:maxLength="12"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_email"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:hint="ایمیل"
+                    android:paddingRight="@dimen/navigation_margin_20"
+                    android:animateLayoutChanges="true"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_location"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    app:customFont="@string/font_default"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                    android:layoutDirection="rtl">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:background="@drawable/shape_edittext"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_down"
+                        android:layout_gravity="center_vertical"
+                        android:layoutDirection="rtl"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:tint="@color/gray_dark"/>
+
+                </FrameLayout>
+
+                <FontComponents.MyButton
+                    android:id="@+id/btn_user_info_calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_23"
+                    android:text="@string/profile_edit_button"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_header_2"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_3"/>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/orange_divider">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/divider_underline_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:layout_gravity="right">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_resolve_notification_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:theme="@style/SwitchCompatTheme"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/intro_text_view_size_01"
+                        android:gravity="right"
+                        app:customFont="@string/font_default"
+                        android:text="@string/profile_settings_1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/divider_underline_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/navigation_margin_5"
+                    android:layout_marginBottom="@dimen/navigation_margin_20"
+                    android:layout_gravity="right">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_resolve_motivational_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:theme="@style/SwitchCompatTheme"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        app:customFont="@string/font_default"
+                        android:gravity="right"
+                        android:textSize="@dimen/intro_text_view_size_01"
+                        android:text="@string/profile_settings_2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/divider_underline_color"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/btn_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/profile_exit"
+                    android:textStyle="bold"
+                    android:textColor="@color/mycolor_yellow_text"
+                    android:gravity="center"
+                    app:customFont="@string/font_default"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_20"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:paddingLeft="@dimen/fragment_first_page_padding_6"
+                    android:paddingRight="@dimen/fragment_first_page_padding_6"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

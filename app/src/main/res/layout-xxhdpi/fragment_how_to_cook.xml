@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_with_shadow"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:padding="@dimen/navigation_margin_15"
+                android:orientation="vertical">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="طرز تهیه غذاها"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/divider_underline_color"/>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/orange_divider">
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:src="@drawable/logo_how_to_cook"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_breakfast_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="صبحانه"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/mycolor_yellow"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_lunch_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:text="ناهار"
+                    android:textColor="@color/mycolor_yellow"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    app:customFont="@string/font_default" />
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_dinner_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="شام"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_2"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/mycolor_yellow"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_how_to_cook_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginBottom="@dimen/navigation_margin_25"
+                    app:customFont="@string/font_default"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

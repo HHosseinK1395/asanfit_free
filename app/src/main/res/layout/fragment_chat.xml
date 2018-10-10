@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:layout_marginTop="@dimen/navigation_margin_15"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_kadr"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/navigation_margin_70">
+
+                <LinearLayout
+                    android:id="@+id/chat_bottom_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_chat_top_view">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="@dimen/navigation_margin_20">
+
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="42dp"
+                                android:layout_gravity="right|center"
+                                android:background="@drawable/shape_button_3"/>
+
+                            <FontComponents.TextViewFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="محمدرضا عارف"
+                                android:layout_marginRight="@dimen/navigation_margin_5"
+                                android:textSize="@dimen/intro_text_view_size_02"
+                                android:layout_gravity="center"/>
+
+                        </FrameLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user_comment_profile"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/profile_moshaver_test"
+                            app:civ_border_width="2dp"
+                            android:layout_marginRight="@dimen/navigation_margin_15"
+                            android:layout_marginLeft="@dimen/navigation_margin_20"
+                            app:civ_border_color="@color/mycolor_yellow"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/navigation_margin_20"
+                        android:layout_marginLeft="@dimen/navigation_margin_20"
+                        android:layout_marginTop="@dimen/navigation_margin_5"
+                        android:layout_marginBottom="@dimen/navigation_margin_5"
+                        android:layout_above="@id/img_chat_three_point">
+
+                        <!--Chat texts is in this places-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/navigation_margin_30"
+                        android:layout_marginRight="@dimen/navigation_margin_30"
+                        android:layout_marginBottom="@dimen/navigation_margin_50">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/mycolor_yellow"
+                            tools:ignore="Suspicious0dp"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="پیام های جدید"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/intro_text_view_size_02"
+                            android:textColor="@color/mycolor_yellow"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/img_chat_three_point"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chat_circles"
+                    android:layout_above="@+id/chat_bottom_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="7dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/shape_button_3"
+                    android:layout_marginRight="@dimen/navigation_margin_30"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/chat_bottom_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/shape_chat_bottom_view">
+
+                    <FontComponents.MyButton
+                        android:id="@+id/btn_chat_send"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_12_and_13_orange"
+                        android:text="ارسال"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"/>
+
+                    <FontComponents.MyEditText
+                        android:id="@+id/edt_chat"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="right|center"
+                        android:maxLength="64"
+                        android:paddingRight="@dimen/navigation_margin_10"
+                        android:hint="گفتگو را شروع کنید. . . "
+                        android:textSize="@dimen/fragment_first_page_text_size_2"
+                        android:background="@drawable/shape_edittext_chat"/>
+
+                    <ImageView
+                        android:id="@+id/img_attach_file"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:src="@drawable/ic_spin_gray"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_complete">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/register_logo"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="@dimen/navigation_margin_60"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:focusableInTouchMode="true">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_user_info_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/user_info_text_color_1"
+                android:textStyle="bold"
+                android:textSize="@dimen/intro_text_view_size_2"
+                app:customFont="@string/font_default"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_60"
+                android:text="@string/user_info_head_string"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_register_code_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/user_info_text_color_2"
+                android:textSize="@dimen/intro_text_view_size_02"
+                app:customFont="@string/font_default"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/navigation_margin_5"
+                android:layout_marginRight="@dimen/navigation_margin_30"
+                android:layout_marginBottom="@dimen/navigation_margin_15"
+                android:layout_marginLeft="@dimen/navigation_margin_30"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:text="@string/user_info_body_string"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_10">
+
+                <FrameLayout
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:id="@+id/btn_user_info_male"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/shape_button_3">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_radio_man"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:background="@drawable/shape_button_3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/img_user_info_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_man_grey"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_radio_man"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/intro_text_view_size_01"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            android:textColor="@color/user_info_text_color_3"
+                            android:layout_gravity="right|center"
+                            android:text="آقا"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:id="@+id/btn_user_info_male_2"
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/img_radio_shape"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_radio_man"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/img_user_info_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="6dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/ic_man_white"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_radio_man"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/intro_text_view_size_01"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="2dp"
+                            android:layout_gravity="right|center"
+                            android:text="آقا"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:id="@+id/btn_user_info_female"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/shape_button_3"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_radio_women"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/img_user_info_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/user_info_radio_button_height"
+                            android:layout_gravity="right"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_woman_grey"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_radio_women"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/intro_text_view_size_01"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            app:customFont="@string/font_default"
+                            android:textColor="@color/user_info_text_color_3"
+                            android:text="خانم"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:id="@+id/btn_user_info_female_2"
+                    android:layout_width="80dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/img_radio_shape">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_radio_man"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/img_user_info_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/user_info_radio_button_height"
+                            android:layout_gravity="right"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_woman_white"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_radio_women"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/intro_text_view_size_01"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            android:layout_gravity="center"
+                            app:customFont="@string/font_default"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/white"
+                            android:text="خانم"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation  ="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_15"
+                android:gravity="center">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_weight_left"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="کیلوگرم"
+                    android:gravity="right"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                    app:customFont="@string/font_default"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_weight"
+                    android:layout_width="155dp"
+                    android:layout_height="37dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="@integer/activity_user_info_text_length"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:textColorHint="@color/user_info_text_color_4"
+                    android:layout_gravity="center"
+                    android:animateLayoutChanges="true"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_weight_right"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="وزن"
+                    android:textColor="@color/gray"
+                    android:gravity="left"
+                    app:customFont="@string/font_default"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation ="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_10">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_height_left"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="سانتی متر"
+                    android:gravity="right"
+                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                    android:textColor="@color/gray"
+                    app:customFont="@string/font_default"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_height"
+                    android:layout_width="155dp"
+                    android:layout_height="37dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:animateLayoutChanges="true"
+                    android:maxLength="@integer/activity_user_info_text_length"
+                    android:textColorHint="@color/user_info_text_color_4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_height_right"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="قد"
+                    android:gravity="left"
+                    android:textColor="@color/gray"
+                    app:customFont="@string/font_default"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation ="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_10">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:customFont="@string/font_default"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_user_info_age"
+                    android:layout_width="155dp"
+                    android:layout_height="37dp"
+                    android:inputType="number"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:maxLength="@integer/activity_user_info_text_age"
+                    android:textColorHint="@color/user_info_text_color_4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:background="@drawable/shape_edittext"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_age_right"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="سن"
+                    android:gravity="left"
+                    android:textColor="@color/gray"
+                    app:customFont="@string/font_default"/>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_user_info_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="@string/user_info_button_text"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_2"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

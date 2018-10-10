@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_with_shadow"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_logo"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/navigation_margin_30"
+        android:layout_marginLeft="@dimen/navigation_margin_30"
+        android:layout_marginTop="@dimen/navigation_margin_30"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/navigation_margin_50"
+        android:layout_marginLeft="@dimen/navigation_margin_50"
+        android:layout_marginBottom="@dimen/navigation_margin_20"
+        android:layout_marginTop="@dimen/navigation_margin_20">
+
+        <FontComponents.TextViewFont
+            android:id="@+id/txt_dia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="در حال بارگذاری . . . "
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/mycolor_yellow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

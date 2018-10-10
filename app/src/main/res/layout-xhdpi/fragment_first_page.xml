@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeef0">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:layout_marginBottom="@dimen/toolbar_height"
+        android:fillViewport="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:layout_marginRight="@dimen/navigation_margin_10"
+                    android:padding="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:background="@drawable/background_with_shadow">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="داشبورد سلامتی"
+                            android:textSize="@dimen/fragment_first_page_text_size_2"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/navigation_margin_20"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            app:customFont="@string/font_default"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/frame_progress_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/navigation_margin_20"
+                            android:layout_centerHorizontal="true">
+
+                            <com.hookedonplay.decoviewlib.DecoView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:dv_lineWidth="10dp"
+                                app:dv_arc_gravity_vertical="Center"
+                                android:id="@+id/circle_progress_weight"
+                                android:background="@drawable/ic_main_progressbar"
+                                android:layout_centerHorizontal="true"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center">
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_weight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="0"
+                                    android:textSize="@dimen/intro_text_view_size_7"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/first_page_color_black"
+                                    android:gravity="center_horizontal"
+                                    android:layout_gravity="center_vertical"
+                                    app:customFont="@string/font_default" />
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_weight_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="کیلو"
+                                    android:textSize="@dimen/intro_text_view_size_0"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="-10dp"
+                                    android:textColor="#949ba9"
+                                    android:gravity="center_horizontal"
+                                    android:layout_gravity="center_vertical"
+                                    app:customFont="@string/font_default" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img_rotate"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/for_dashbord"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_toLeftOf="@id/frame_progress_bar"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/navigation_margin_15">
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_source_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="81"
+                                android:layout_gravity="center"
+                                android:textColor="@color/first_page_color_red"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/fragment_first_page_text_size_6"
+                                android:gravity="center_horizontal"
+                                app:customFont="@string/font_default"
+                                android:layout_weight="1"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:paddingLeft="@dimen/navigation_margin_20"
+                            android:paddingRight="@dimen/navigation_margin_20"
+                            android:text="وزن اولیه"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="2dp"
+                            android:textSize="@dimen/intro_text_view_size_02"
+                            app:customFont="@string/font_default"
+                            android:background="@drawable/ic_first_page_1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/frame_progress_bar"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/navigation_margin_15"
+                            android:orientation="vertical">
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_destination_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="65"
+                                android:textSize="@dimen/intro_text_view_size_6"
+                                android:layout_gravity="center"
+                                android:textColor="@color/first_page_color_green"
+                                app:customFont="@string/font_default"
+                                android:textStyle="bold"/>
+
+                            <FontComponents.TextViewFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:paddingLeft="@dimen/navigation_margin_20"
+                                android:paddingRight="@dimen/navigation_margin_20"
+                                android:text="وزن هدف"
+                                android:gravity="center"
+                                android:paddingTop="2dp"
+                                android:layout_gravity="center"
+                                app:customFont="@string/font_default"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/intro_text_view_size_02"
+                                android:background="@drawable/ic_first_page_1"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_first_page_1"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                        <FontComponents.TextViewFont
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/intro_text_view_size_02"
+                            android:paddingLeft="@dimen/navigation_margin_20"
+                            android:paddingRight="@dimen/navigation_margin_20"
+                            android:textColor="@color/black"
+                            android:text="وزن فعلی"/>
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:weightSum="3"
+                        android:layout_gravity="center"
+                        android:paddingBottom="@dimen/navigation_margin_50"
+                        android:layout_marginTop="@dimen/navigation_margin_40">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true">
+
+                            <FrameLayout
+                                android:id="@+id/frame_down_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal">
+
+                                <com.hookedonplay.decoviewlib.DecoView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:dv_lineWidth="5dp"
+                                    app:dv_arc_gravity_vertical="Center"
+                                    android:id="@+id/circle_progress_1"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_overweight_measure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/first_page_color_black"
+                                    android:textStyle="bold"
+                                    app:customFont="@string/font_default"
+                                    android:text="0"/>
+
+                            </FrameLayout>
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_down_2"
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:text="شاخص توده بدنی"
+                                android:textSize="9sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                app:customFont="@string/font_default"
+                                android:layout_marginTop="@dimen/navigation_margin_5"
+                                android:paddingTop="3dp"
+                                android:background="@drawable/ic_first_page_2"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center">
+
+                            <FrameLayout
+                                android:id="@+id/frame_down_2"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <com.hookedonplay.decoviewlib.DecoView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:dv_lineWidth="5dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:dv_arc_gravity_vertical="Center"
+                                    android:id="@+id/circle_progress_2"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_weightloss_measure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="0"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/first_page_color_black"
+                                    android:textStyle="bold"/>
+
+                            </FrameLayout>
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_down_1"
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:textSize="9sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="کاهش وزن تا کنون"
+                                android:textColor="@color/white"
+                                app:customFont="@string/font_default"
+                                android:layout_marginTop="@dimen/navigation_margin_5"
+                                android:paddingTop="3dp"
+                                android:background="@drawable/ic_first_page_3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center">
+
+                            <FrameLayout
+                                android:id="@+id/frame_down_3"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <com.hookedonplay.decoviewlib.DecoView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:dv_lineWidth="5dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:dv_arc_gravity_vertical="Center"
+                                    android:id="@+id/circle_progress_3"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_bodymass_measure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="0"
+                                    android:textSize="@dimen/intro_text_view_size_1"
+                                    app:customFont="@string/font_default"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/first_page_color_black"
+                                    android:textStyle="bold"/>
+
+                            </FrameLayout>
+
+                            <FontComponents.TextViewFont
+                                android:id="@+id/txt_down_3"
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="9sp"
+                                android:text="میزان اضافه وزن"
+                                android:textColor="@color/white"
+                                app:customFont="@string/font_default"
+                                android:layout_marginTop="@dimen/navigation_margin_5"
+                                android:paddingTop="3dp"
+                                android:background="@drawable/ic_first_page_4"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_user_info_complete_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-45dp"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="@string/first_page_build_yourself"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_2"
+                android:layout_gravity="center" />
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragment_first_page_message_box_height"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_with_shadow_message_box"
+                    android:backgroundTint="@color/weight_color_red"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="#44D8D8D8"
+                        android:layout_margin="1dp"
+                        android:padding="3dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_cancel"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            android:textSize="@dimen/intro_text_view_size_0"
+                            app:customFont="@string/font_default"
+                            android:text="@string/first_page_message_text"/>
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginRight="@dimen/navigation_margin_20"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/warning"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:id="@+id/lnr_close_message_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragment_first_page_message_box_height"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:background="@drawable/shape_with_shadow_message_box"
+                    android:backgroundTint="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/img_message_close"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:background="@drawable/shape_background_for_close_button">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_cancel_grey"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_notification_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="@dimen/navigation_margin_10"
+                            android:textSize="@dimen/intro_text_view_size_0"
+                            app:customFont="@string/font_default"
+                            android:text="@string/first_page_message_text_2"/>
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginRight="@dimen/navigation_margin_20"
+                            android:layout_gravity="center|right"
+                            android:src="@drawable/alarm"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/navigation_margin_15"
+                    android:layout_marginRight="@dimen/navigation_margin_15"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:background="@drawable/background_with_shadow"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/navigation_margin_10"
+                        android:paddingRight="@dimen/navigation_margin_10"
+                        android:textSize="@dimen/fragment_first_page_text_size_2"
+                        android:text="تازه های مجله آسان فیت"
+                        android:textColor="@color/black"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/navigation_margin_10"
+                        app:customFont="@string/font_default"
+                        android:layout_marginTop="@dimen/navigation_margin_10"/>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/orange_divider"
+                        android:layout_marginTop="@dimen/navigation_margin_5"
+                        android:layout_marginRight="@dimen/navigation_margin_20"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/navigation_margin_10"
+                        android:background="@drawable/shape_with_shadow"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:layout_marginRight="@dimen/navigation_margin_10"
+                        android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ss.com.bannerslider.views.BannerSlider
+                                android:id="@+id/banner_slider1"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="40dp"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_dashboard_slider_arrow_left"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:src="@drawable/ic_slider_left"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="10dp"/>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <ImageView
+                                        android:id="@+id/img_dashboard_slider_arrow_right"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:src="@drawable/ic_slider_right"
+                                        android:layout_gravity="right"
+                                        android:layout_marginRight="10dp"/>
+
+                                </LinearLayout>
+
+                                <FontComponents.MyButton
+                                    android:id="@+id/btn_dashboard_slider_taghzieh"
+                                    android:layout_width="60dp"
+                                    android:layout_height="23dp"
+                                    android:layout_gravity="right"
+                                    android:text="تغذیه"
+                                    android:textSize="@dimen/intro_text_view_size_02"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/shape_button_2"/>
+
+                                <FontComponents.TextViewFont
+                                    android:id="@+id/txt_dashboard_slider_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/navigation_margin_10"
+                                    android:paddingRight="@dimen/navigation_margin_10"
+                                    android:textSize="@dimen/fragment_first_page_text_size_1"
+                                    android:text="در این مطلب با غذاهایی که ویتامین بالایی دارند آشنا شوید"
+                                    android:textColor="@color/white"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="@dimen/navigation_margin_10"
+                                    app:customFont="@string/font_default"
+                                    android:layout_marginTop="@dimen/navigation_margin_5"/>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:layout_marginRight="@dimen/navigation_margin_10"
+                        android:layout_marginBottom="@dimen/navigation_margin_30"
+                        android:gravity="center">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <FrameLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="120dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_dashboard_bottom_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/slider_bk_6"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <FontComponents.MyButton
+                                            android:id="@+id/btn_dashboard_bottom_left"
+                                            android:layout_width="50dp"
+                                            android:layout_height="20dp"
+                                            android:text="سالاد"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_above="@id/txt_dashboard_bottom_left"
+                                            android:textSize="@dimen/intro_text_view_size_02"
+                                            android:textColor="@color/white"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/ic_dashboard_red_button"/>
+
+                                        <FontComponents.TextViewFont
+                                            android:id="@+id/txt_dashboard_bottom_left"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:lines="2"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginBottom="7dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="20dp"
+                                            android:textSize="@dimen/fragment_first_page_text_size_0"
+                                            app:customFont="@string/font_default"
+                                            android:text="در این مطلب با غذاهایی که ویتامین بالایی دارند آشنا شوید"
+                                            android:textColor="@color/white"/>
+
+                                    </RelativeLayout>
+
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="120dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_dashboard_bottom_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/slider_bk_6"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <FontComponents.MyButton
+                                            android:id="@+id/btn_dashboard_bottom_right"
+                                            android:layout_width="50dp"
+                                            android:layout_height="20dp"
+                                            android:text="سلامتی"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_above="@id/txt_dashboard_bottom_right"
+                                            android:textSize="@dimen/intro_text_view_size_02"
+                                            android:textColor="@color/white"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/ic_dashboard_blue_button"/>
+
+                                        <FontComponents.TextViewFont
+                                            android:id="@+id/txt_dashboard_bottom_right"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:lines="2"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginBottom="7dp"
+                                            android:layout_marginRight="10dp"
+                                            android:textSize="@dimen/fragment_first_page_text_size_0"
+                                            app:customFont="@string/font_default"
+                                            android:text="در این مطلب با غذاهایی که ویتامین بالایی دارند آشنا شوید"
+                                            android:textColor="@color/white"/>
+
+                                    </RelativeLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_complete">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_logo"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/navigation_margin_60"
+            android:layout_gravity="top|center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_register_code_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/register_text_color_1"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/navigation_margin_40"
+                android:textSize="@dimen/intro_text_view_size_5"
+                app:customFont="@string/font_default"
+                android:gravity="center"
+                android:text="@string/register_head_string"/>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_register_code_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/register_text_color_2"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="@dimen/navigation_margin_40"
+                android:textSize="@dimen/intro_text_view_size_1"
+                android:lineSpacingExtra="@dimen/navigation_margin_10"
+                app:customFont="@string/font_default"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:text="@string/register_body_string"/>
+
+            <FontComponents.MyEditText
+                android:id="@+id/edt_register_code"
+                android:layout_width="155dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="@dimen/navigation_margin_20"
+                android:layoutDirection="rtl"
+                android:inputType="phone"
+                android:textColorHint="@color/register_text_color_3"
+                android:gravity="center"
+                android:maxLength="12"
+                android:layout_gravity="center"
+                android:hint="شماره موبایل"
+                android:textSize="@dimen/intro_text_view_size_2"
+                android:background="@drawable/shape_edittext"/>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_register_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="@string/register_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_3"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lnr_register_rtl_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_register_code_rule_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/register_text_color_2"
+                    android:layout_marginRight="@dimen/navigation_margin_2"
+                    android:textSize="@dimen/intro_text_view_size_1"
+                    app:customFont="@string/font_default"
+                    android:gravity="right|center"
+                    android:text="@string/register_rule_text_2"/>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_register_code_rule_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textColor="#fe8300"
+                    android:textSize="@dimen/intro_text_view_size_1"
+                    app:customFont="@string/font_default"
+                    android:gravity="right"
+                    android:text="@string/register_rule_text_1"/>
+
+                <ImageView
+                    android:id="@+id/img_btn_rules_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rules"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <FontComponents.TextViewFont
+                android:id="@+id/txt_register_code_rule_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/register_text_color_2"
+                android:layout_marginRight="@dimen/navigation_margin_15"
+                android:textSize="@dimen/intro_text_view_size_1"
+                app:customFont="@string/font_default"
+                android:gravity="right|center"
+                android:text="@string/register_rule_text_3"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

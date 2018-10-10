@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/transparent_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_with_shadow"
+                android:layout_marginBottom="@dimen/navigation_margin_30"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/navigation_margin_10"
+                android:layout_marginRight="@dimen/navigation_margin_10"
+                android:layout_marginTop="@dimen/navigation_margin_10"
+                android:padding="@dimen/navigation_margin_20"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <FontComponents.TextViewFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/navigation_margin_10"
+                    android:text="@string/fragment_extended_subscription_1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fragment_first_page_text_size_2"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_default" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/divider_underline_color" />
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/navigation_margin_5"
+                        android:background="@drawable/orange_divider">
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_10"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="هدف گذاری"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="11sp"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text=" کیلوگرم"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_goal_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="وزن هدف : "/>
+
+                </LinearLayout>
+
+               <!-- <FontComponents.TextViewFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:textColor="@color/black"
+                    app:customFont="@string/font_default"
+                    android:layout_marginRight="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:text="رژیم درخواستی"/>-->
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_parvandeh_remove_regim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        app:srcCompat="@drawable/ic_parvandeh_remove_regim"/>
+
+                    <ImageView
+                        android:id="@+id/btn_parvandeh_add_regim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        app:srcCompat="@drawable/ic_parvandeh_add_regim"/>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/navigation_margin_10"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:layoutDirection="rtl">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_parvandeh_regim"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textAlignment="textEnd"
+                            android:textDirection="rtl"
+                            android:tooltipText="روز"
+                            android:paddingRight="@dimen/navigation_margin_10"
+                            android:background="@drawable/shape_edittext"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_down"
+                            android:layout_gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:layout_marginLeft="@dimen/navigation_margin_10"
+                            android:tint="@color/gray_dark"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات پایه"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="11sp"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:text="سانتی متر"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        android:text="قد : "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        app:customFont="@string/font_default"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:text="کیلوگرم"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="وزن : "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        android:text="آقا"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        android:text="جنسیت : "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:customFont="@string/font_default"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:textColor="@color/black"
+                        android:text="سن : "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:text="سانتی متر"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_dore_kamar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="0"/>
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/black"
+                        android:text="دور کمر : "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:orientation="horizontal">
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/navigation_margin_5"
+                        android:text="سانتی متر"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default" />
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_dore_moch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default" />
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دور مچ : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        app:customFont="@string/font_default" />
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_parvandeh_payeh_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:layout_gravity="right"
+                    app:customFont="@string/font_default"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:textColor="@color/black"
+                    android:text="تاریخ تولد"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:weightSum="3"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layoutDirection="rtl">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_parvandeh_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textAlignment="textEnd"
+                            android:textDirection="rtl"
+                            android:tooltipText="روز"
+                            android:backgroundTint="@color/edittext_disable_color"
+                            android:background="@drawable/shape_edittext"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_down"
+                            android:layout_gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:layout_marginLeft="@dimen/navigation_margin_10"
+                            android:tint="@color/gray_dark"/>
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/navigation_margin_2"
+                        android:layoutDirection="rtl">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_parvandeh_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textAlignment="textEnd"
+                            android:textDirection="rtl"
+                            android:tooltipText="روز"
+                            android:backgroundTint="@color/edittext_disable_color"
+                            android:background="@drawable/shape_edittext"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_down"
+                            android:layout_gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:layout_marginLeft="@dimen/navigation_margin_10"
+                            android:tint="@color/gray_dark"/>
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/navigation_margin_2"
+                        android:layoutDirection="rtl">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_parvandeh_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textAlignment="textEnd"
+                            android:textDirection="rtl"
+                            android:tooltipText="روز"
+                            android:backgroundTint="@color/edittext_disable_color"
+                            android:background="@drawable/shape_edittext"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_down"
+                            android:layout_gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:layout_marginLeft="@dimen/navigation_margin_10"
+                            android:tint="@color/gray_dark"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_parvandeh_physical_activity"></include>
+                <include layout="@layout/layout_parvandeh_medical_history"></include>
+                <include layout="@layout/layout_parvandeh_food_habbitation"></include>
+                <include layout="@layout/layout_parvandeh_others"
+                    android:layout_marginBottom="@dimen/navigation_margin_50"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" ></include>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات شخصی"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="11sp"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_parvandeh_payeh_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:visibility="gone"
+                    app:customFont="@string/font_default"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:textColor="@color/black"
+                    android:text="نام"/>
+
+                <FontComponents.MyEditText
+                    android:id="@+id/edt_parvandeh_your_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="@dimen/navigation_margin_20"
+                    android:layoutDirection="rtl"
+                    android:inputType="phone"
+                    android:gravity="right|center"
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:paddingRight="@dimen/navigation_margin_20"
+                    android:maxLength="12"
+                    android:hint="نام شما"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:background="@drawable/shape_edittext"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/navigation_margin_20"
+                    android:layout_marginBottom="@dimen/navigation_margin_10">
+
+                    <FontComponents.TextViewFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات پزشکی"
+                        android:textColor="@color/mycolor_yellow_text"
+                        android:textStyle="bold"
+                        app:customFont="@string/font_default"
+                        android:textSize="11sp"
+                        android:layout_gravity="right"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/round_indicator"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/navigation_margin_5"/>
+
+                </LinearLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_parvandeh_payeh_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    app:customFont="@string/font_default"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:textColor="@color/black"
+                    android:text="دراپ دان"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:visibility="gone"
+                    android:layoutDirection="rtl">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_parvandeh_medical_information"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textAlignment="textEnd"
+                        android:textDirection="rtl"
+                        android:tooltipText="روز"
+                        android:backgroundTint="@color/edittext_disable_color"
+                        android:paddingRight="@dimen/navigation_margin_10"
+                        android:background="@drawable/shape_edittext"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_down"
+                        android:layout_gravity="center_vertical"
+                        android:layoutDirection="rtl"
+                        android:layout_marginLeft="@dimen/navigation_margin_10"
+                        android:tint="@color/gray_dark"/>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frame_fill_incorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/navigation_margin_10"
+                    android:visibility="gone"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:id="@+id/btn_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_button_4"
+                        android:text="تکمیل فیلد الزامی میباشد"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/navigation_margin_10"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:paddingLeft="@dimen/fragment_first_page_padding_6"
+                        android:paddingRight="@dimen/fragment_first_page_padding_6"
+                        android:layout_marginBottom="@dimen/navigation_margin_10"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_parvandeh_close"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/navigation_margin_15"/>
+
+                    <FontComponents.TextViewFont
+                        android:id="@+id/txt_parvandeh_payeh_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fragment_first_page_text_size_0"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/navigation_margin_45"
+                        app:customFont="@string/font_default"
+                        android:textColor="@color/red"
+                        android:text="تکمیل فیلد الزامی می باشد"/>
+
+                </FrameLayout>
+
+                <FontComponents.TextViewFont
+                    android:id="@+id/txt_parvandeh_payeh_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/fragment_first_page_text_size_0"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    app:customFont="@string/font_default"
+                    android:layout_marginBottom="@dimen/navigation_margin_5"
+                    android:textColor="@color/black"
+                    android:text="چند گزینه ای"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/navigation_margin_60"
+                    android:layout_marginTop="@dimen/navigation_margin_5">
+
+                    <FrameLayout
+                        android:id="@+id/frame_parvandeh_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/navigation_margin_10">
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_three"
+                            android:layout_width="@dimen/user_info_radio_button_width"
+                            android:layout_height="@dimen/user_info_radio_button_height"
+                            android:background="@drawable/shape_button_3"/>
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_tick_three"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_parvandeh_tick_gray"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="@dimen/navigation_margin_2"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_parvandeh_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گزینه سه"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/fragment_first_page_text_size_0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginRight="@dimen/navigation_margin_2"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_parvandeh_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/navigation_margin_10">
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_two"
+                            android:layout_width="@dimen/user_info_radio_button_width"
+                            android:layout_height="@dimen/user_info_radio_button_height"
+                            android:background="@drawable/shape_button_3"/>
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_tick_two"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_parvandeh_tick_gray"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="@dimen/navigation_margin_2"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_parvandeh_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گزینه دو"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/fragment_first_page_text_size_0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginRight="@dimen/navigation_margin_2"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_parvandeh_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/navigation_margin_10">
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_one"
+                            android:layout_width="@dimen/user_info_radio_button_width"
+                            android:layout_height="@dimen/user_info_radio_button_height"
+                            android:background="@drawable/shape_button_2"/>
+
+                        <ImageView
+                            android:id="@+id/btn_parvandeh_tick_one"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_parvandeh_tick_black"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="@dimen/navigation_margin_2"/>
+
+                        <FontComponents.TextViewFont
+                            android:id="@+id/txt_parvandeh_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گزینه یک"
+                            app:customFont="@string/font_default"
+                            android:textSize="@dimen/fragment_first_page_text_size_0"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginRight="@dimen/navigation_margin_2"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FontComponents.MyButton
+                android:id="@+id/btn_parvandeh_save_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/button_2_to_11_and_14_16_17_22"
+                android:text="ذخیره اطلاعات"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fragment_first_page_text_size_1"/>
+
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>
